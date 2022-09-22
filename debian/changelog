@@ -1,0 +1,32 @@
+node-timers-browserify (2.0.11+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version: fix license header
+  * Move to /usr/share
+  * Bump debhelper and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 18 Sep 2019 16:40:29 +0200
+
+node-timers-browserify (2.0.10+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version, fix problems with webpack
+    (global not exported)
+  * Fix broken symlink (Closes: #863670), remove it. Not needed on
+    debian install
+  * Update copyright, compat, and policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 24 Dec 2018 20:09:11 +0100
+
+node-timers-browserify (2.0.6+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 2.0.6+dfsg
+  * Bump compat, standards and change section to javascript
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 27 Feb 2018 13:37:02 +0530
+
+node-timers-browserify (2.0.2+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #862239)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 May 2017 12:54:55 +0530

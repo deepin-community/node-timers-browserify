@@ -1,0 +1,18 @@
+Subject: fix example fie
+author: Bastien Roucariès <rouca@debian.org>
+forwarded: not-needed
+
+Fix example according to debian path
+Index: node-timers-browserify/example/enroll/index.html
+===================================================================
+--- node-timers-browserify.orig/example/enroll/index.html
++++ node-timers-browserify/example/enroll/index.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html>
+   <head>
+-    <script type="text/javascript" src="/js/browserify.js"></script>
++    <script type="text/javascript" src="js/browserify.js"></script>
+   </head>
+   <body>
+   </body>

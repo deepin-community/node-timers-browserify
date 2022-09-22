@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export NODE_PATH=/usr/share/nodejs:/usr/lib/nodejs:.
+export JS_DIR=example/enroll/js
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+	ln -s . timers
+	browserify-lite ${JS_DIR}/main.js --outfile ${JS_DIR}/browserify.js
+
+#override_dh_auto_test:
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f timers ${JS_DIR}/browserify.js

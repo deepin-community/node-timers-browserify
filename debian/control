@@ -1,0 +1,31 @@
+Source: node-timers-browserify
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 12)
+ , nodejs
+ , node-browserify-lite
+ , node-setimmediate (>= 1.0.4)
+Standards-Version: 4.4.0
+Homepage: https://github.com/jryans/timers-browserify
+Vcs-Git: https://salsa.debian.org/js-team/node-timers-browserify.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-timers-browserify
+
+Package: node-timers-browserify
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-setimmediate (>= 1.0.4)
+Description: timers module for browserify
+ This library adds support for the `timers` module to browserify. Browsers
+ support the public methods of the `timers` module already.
+ .
+ But the `timers` module also includes some private methods used in other
+ built-in Node.js modules. These are used to efficiently support a large
+ quantity of timers with the same timeouts by creating only a few timers under
+ the covers.
+ .
+ Node.js is an event-based server-side JavaScript engine.

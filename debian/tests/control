@@ -1,0 +1,2 @@
+Tests: require
+Depends: node-timers-browserify, nodejs (>= 6)
